@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Arquitectura CTTI. Generalitat de Catalunya </title>
+    <link>https://canigo.ctti.gencat.cat/sections/gicar/</link>
+    <language>ca-es</language>
+    
+    
+    <updated>Wed, 08 Jun 2016 17:11:42 &#43;0100</updated>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+         
+    <item>
+      <title>
+        
+        SIC 2.0. Estructura de permisos i autoservei d&#39;usuaris
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2017-11-10-SIC-Estructura-permisos-i-Autoservei/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2017-11-10-SIC-Estructura-permisos-i-Autoservei/</guid>
+      <description>Degut al gran nombre de consultes rebudes sobre el funcionament d&#39;aquest autoservei, hem decidit publicar aquest article on describim amb més detall la seva operativa. (Editat el 30/04/2018 - nova estructura de grups en el sistema de permisos)</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        eFormularis. Serveis Invocació REST API
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-04-30-eformularis-REST-API/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-04-30-eformularis-REST-API/</guid>
+      <description>En el projecte d&#39;actualització tecnològica que s&#39;està duent a terme a la plataforma d&#39;eFormularis, s&#39;introdueix una novetat que és la publicació d&#39;una REST API per l&#39;accés als Serveis d&#39;Invocació de Formularis PDF</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Jobs pipeline: Estat de l&#39;art
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-04-27-SIC-Jobs-pipeline-estat-actual/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-04-27-SIC-Jobs-pipeline-estat-actual/</guid>
+      <description>Fa gairebé un any que es van implantar els jobs de tipus pipeline al SIC. En aquest article s&#39;analitza l&#39;estat actual d&#39;aquests tipus de jobs i s&#39;expliquen els futurs canvis que experimentaran aquesta modalitat de jobs</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Canigó. Configuració multi-entorn en SPAs
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-03-23-Canigo-Configuracio-multientorn-SPA/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-03-23-Canigo-Configuracio-multientorn-SPA/</guid>
+      <description>Amb la separació de frontend i backend que es recomana aplicar com a patró d&#39;arquitectura en aplicacions Canigó, i per tal d&#39;acomplir els requeriments d&#39;una única construcció no depenent de l&#39;entorn que s&#39;imposa des del SIC, cal donar una solució de configuració multi-entorn per la part de frontend</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Canvi del sistema de permisos al SIC
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-03-23-SIC-Canvi-sistema-permisos/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-03-23-SIC-Canvi-sistema-permisos/</guid>
+      <description>Durant el mes d&#39;abril, es modificarà el sistema de permisos del SIC per tal de simplificar l&#39;operativa de l&#39;Autoservei. L&#39;anterior model de seguretat quedarà obsolet i s&#39;aplicarà el model de seguretat 2018.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Branca Master al Git del SIC
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-03-05-SIC-Utilitzar-branca-master/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-03-05-SIC-Utilitzar-branca-master/</guid>
+      <description>Arrel les consultes rebudes les darreres setmanes, creiem convenient publicar aquest article on s&#39;explica els usos de les branques al SIC.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Canigó. Jocs de proves API REST
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-02-14-Canigo-Swagger-i-SOAP-UI/</link>
+      <pubDate>Wed, 14 Feb 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-02-14-Canigo-Swagger-i-SOAP-UI/</guid>
+      <description>Des de Canigó 3.2 es dona suport a la implementació d&#39;APIs REST. Poder generar un joc de proves automatitzat a partir del contracte de l&#39;API REST és possible gràcies a eines com SOAP UI</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Oficina Tècnica de Canigó i Suport Cloud. Balanç 2017
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2018-01-10-OTCanigo-Balanc-2017/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2018-01-10-OTCanigo-Balanc-2017/</guid>
+      <description>Evolució dels serveis de l&#39;Oficina Tècnica de Canigó i Suport Cloud a l&#39;any 2017</description>
+    </item>
+         
+    <item>
+      <title>
+        
+          BLOG. 
+        
+        Principis de Microserveis
+      </title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/12/principismicroserveis/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/12/principismicroserveis/</guid>
+      <description>Un cop acabada la transformació del maquinari i dels programaris que suporten les aplicacions, comencem a observar una certa tracció en les necessitats de posar al dia també les aplicacions. En la majoria de casos són plantejables la conversió de monòlits en aplicacions basades en microserveis. En aquest post, continuem la sèrie d&#39;articles sobre els microserveis i presentem els principis que han de governar el disseny i la implementació de les aplicacions basades en microserveis.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Jobs automàtics per a PRE i PRO
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2017-11-29-Jobs-automatics-per-a-PRE-i-PRO/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2017-11-29-Jobs-automatics-per-a-PRE-i-PRO/</guid>
+      <description>Des del passat mes de novembre, el SIC està preparat per oferir jobs de desplegament automàtic als entorns de Preproducció i Producció.</description>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+  </channel>
+</rss>

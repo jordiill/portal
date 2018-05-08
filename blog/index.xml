@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog d'Arquitectura del CTTI. Generalitat de Catalunya</title>
+    <link>https://canigo.ctti.gencat.cat/blog/</link>
+    <language>ca-es</language>
+    
+    
+    <updated>Sat, 16 Dec 2017 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Principis de Microserveis</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/12/principismicroserveis/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/12/principismicroserveis/</guid>
+      <description>Un cop acabada la transformació del maquinari i dels programaris que suporten les aplicacions, comencem a observar una certa tracció en les necessitats de posar al dia també les aplicacions. En la majoria de casos són plantejables la conversió de monòlits en aplicacions basades en microserveis. En aquest post, continuem la sèrie d&#39;articles sobre els microserveis i presentem els principis que han de governar el disseny i la implementació de les aplicacions basades en microserveis.</description>
+    </item>
+    
+    <item>
+      <title>Hibridació de l&#39;autenticació i de la gestió d&#39;identitats amb Office365</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/09/hibridacio-office365/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/09/hibridacio-office365/</guid>
+      <description>Arquitectura implementada per a assolir la hibridació de la capa de gestió d&#39;identitats i de control d&#39;accés amb l&#39;Office365 de la Generalitat</description>
+    </item>
+    
+    <item>
+      <title>Angular: Estat actual i evolució</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/09/Angular/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/09/Angular/</guid>
+      <description>Angular és un framework de JavaScript de codi obert, mantingut per Google, utilitzat per desenvolupar aplicacions web d&#39;una única pàgina (SPA). Deriva d&#39;AngularJs, un framework Javascript per a SPAs també mantingut per Google, però del que en conserva ben poques coses més enllà de la similitud del nom</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Next 17</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/06/GoogleCloudNext17/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/06/GoogleCloudNext17/</guid>
+      <description>Novetats Google Cloud Next 17</description>
+    </item>
+    
+    <item>
+      <title>Utilització preferent de versions LTS de programari</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/06/versions_lts/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/06/versions_lts/</guid>
+      <description>Les versions LTS (Long-Term Support) de programari lliure són les recomanades i a adoptar com a preferents seguint el criteri d&#39;Arquitectura CTTI</description>
+    </item>
+    
+    <item>
+      <title>Sobre les SDN</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/04/SDN-20170401/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/04/SDN-20170401/</guid>
+      <description>Què és i el per què de SDN. Consideracions per dummies que trobem al respecte</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch, open source en cloud públic amb orientació empresarial</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2017/03/acces-elasticsearch-dbaas/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2017/03/acces-elasticsearch-dbaas/</guid>
+      <description>L&#39;accés a un Elasticsearch a cloud públic té una sèrie de consideracions de seguretat a tenir en compte</description>
+    </item>
+    
+    <item>
+      <title>Tecnologia darrera del Web d&#39;Arquitectura</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2016/11/web-arquitectura/</link>
+      <pubDate>Wed, 09 Nov 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2016/11/web-arquitectura/</guid>
+      <description>Us expliquem la tecnologia darrera la web d&#39;arquitectura i com l&#39;utilitzem de base per a part de la R&amp;D que fem a la unitat</description>
+    </item>
+    
+    <item>
+      <title>Cloud-Ready</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2016/09/cloud-ready/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2016/09/cloud-ready/</guid>
+      <description>Aspectes a tenir en compte en la definició de l&#39;arquitectura d&#39;una aplicació per estar preparada per anar al Cloud</description>
+    </item>
+    
+    <item>
+      <title>(micro)serveis</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2016/08/microserveis/</link>
+      <pubDate>Thu, 04 Aug 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2016/08/microserveis/</guid>
+      <description>Introducció al patró de disseny basat en microserveis i les implicacions que té a l&#39;hora de pensar les aplicacions</description>
+    </item>
+    
+  </channel>
+</rss>

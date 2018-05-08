@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Mòdul Seguretat</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Mòdul Seguretat\" />");
+		document.write("<meta name=\"description\" content=\"Autenticació i autorització d\x27usuaris\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="http://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Arquitectura CTTI</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/principis' data-toggle='_dropdown'>Principis d&#39;arquitectura</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/canigo-documentacio-versions-3x-core">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<a href="/canigo/">Framework Canigó</a> </li>
+	<li>
+		<a href="/canigo-documentacio/">Documentació</a>
+	</li>
+
+	<li>
+		<a href="/canigo-documentacio-versions/">Versions</a>
+	</li>
+	
+	<li>
+		<a href="/canigo-documentacio-versions-3x">Versió 3.x</a>
+	</li>
+
+	<li>
+		
+			<a href="/canigo-documentacio-versions-3x-core">Mòduls Generals</a>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+									
+									<li>
+										Mòdul Seguretat
+									</li>
+									
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+										Mòdul Seguretat
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 28-11-2016
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+
+					
+
+						
+
+<h2 id="propòsit">Propòsit</h2>
+
+<p>El Mòdul de Seguretat té com a propòsit principal gestionar l&rsquo;autenticació i l&rsquo;autorització dels usuaris en aplicacions Canigó. L&rsquo;objectiu de l&rsquo;autenticació és comprovar que l&rsquo;usuari és qui diu ser, mentre que l&rsquo;autorització s&rsquo;encarrega de comprovar que realment té accés als recursos sol·licitats.</p>
+
+<p>Canigó recomana l&rsquo;ús de Spring Security com a framework base i les extensions que Canigó proporciona.</p>
+
+<h2 id="instal-lació-i-configuració">Instal.lació i Configuració</h2>
+
+<h3 id="instal-lació">Instal.lació</h3>
+
+<p>Per tal d&rsquo;instal- lar el mòdul de seguretat es pot incloure automàticament a través de l&rsquo;eina de suport al desenvolupament o bé afegir manualment en el pom.xml de l&rsquo;aplicació la següent dependència:</p>
+
+<pre><code>&lt;canigo.security.version&gt;[1.2.0, 1.3.0)&lt;/canigo.security.version&gt;
+&lt;canigo.test.version&gt;[1.2.0,1.3.0)&lt;/canigo.test.version&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;cat.gencat.ctti&lt;/groupId&gt;
+    &lt;artifactId&gt;canigo.security&lt;/artifactId&gt;
+    &lt;version&gt;${canigo.security.version}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;cat.gencat.ctti&lt;/groupId&gt;
+    &lt;artifactId&gt;canigo.test&lt;/artifactId&gt;
+    &lt;version&gt;${canigo.test.version}&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+   &lt;groupId&gt;cat.gencat.ctti&lt;/groupId&gt;
+   &lt;artifactId&gt;canigo.security&lt;/artifactId&gt;
+   &lt;type&gt;test-jar&lt;/type&gt;
+   &lt;version&gt;${canigo.security.version}&lt;/version&gt;
+   &lt;scope&gt;test&lt;/scope&gt;
+   &lt;classifier&gt;tests&lt;/classifier&gt;
+&lt;/dependency&gt;
+
+</code></pre>
+
+<p>Al pom.xml també s&rsquo;ha d&rsquo;afegir el plugin executa el test unitari del mòdul de seguretat.
+En el cas de tenir configurat l&rsquo;execució del test dels mòduls de configuració i/o persistència,
+cal excloure la dependència del mòdul de seguretat per tal d&rsquo;evitar conflictes:</p>
+
+<pre><code>&lt;build&gt;
+    ...
+    &lt;plugins&gt;
+        ...
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+            &lt;executions&gt;
+                &lt;execution&gt;
+                    &lt;id&gt;base-test&lt;/id&gt;
+                    &lt;phase&gt;test&lt;/phase&gt;
+                    &lt;goals&gt;
+                        &lt;goal&gt;test&lt;/goal&gt;
+                    &lt;/goals&gt;
+                    &lt;configuration&gt;
+                        &lt;dependenciesToScan&gt;
+                  &lt;dependency&gt;cat.gencat.ctti:canigo.core&lt;/dependency&gt;
+                  &lt;dependency&gt;cat.gencat.ctti:canigo.persistence.jpa&lt;/dependency&gt;
+              &lt;dependency&gt;cat.gencat.ctti:canigo.web.rs&lt;/dependency&gt;
+                        &lt;/dependenciesToScan&gt;
+            &lt;excludes&gt;
+              &lt;exclude&gt;%regex[${project.groupId}.*.*Test.*]&lt;/exclude&gt;
+            &lt;/excludes&gt;
+            &lt;classpathDependencyExcludes&gt;
+              &lt;classpathDependencyExcludes&gt;cat.gencat.ctti:canigo.security&lt;/classpathDependencyExcludes&gt;
+            &lt;/classpathDependencyExcludes&gt;
+                    &lt;/configuration&gt;
+                &lt;/execution&gt;
+                &lt;execution&gt;
+                    &lt;id&gt;cat.gencat.ctti:canigo.security-test&lt;/id&gt;
+                    &lt;phase&gt;test&lt;/phase&gt;
+                    &lt;goals&gt;
+                        &lt;goal&gt;test&lt;/goal&gt;
+                    &lt;/goals&gt;
+                    &lt;configuration&gt;
+                        &lt;dependenciesToScan&gt;
+                          &lt;dependency&gt;cat.gencat.ctti:canigo.security&lt;/dependency&gt;
+                        &lt;/dependenciesToScan&gt;
+            &lt;excludes&gt;
+              &lt;exclude&gt;%regex[${project.groupId}.*.*Test.*]&lt;/exclude&gt;
+            &lt;/excludes&gt;
+                    &lt;/configuration&gt;
+                &lt;/execution&gt;
+                ...
+            &lt;/executions&gt;
+        &lt;/plugin&gt;
+        ...
+    &lt;/plugins&gt;
+    ...
+&lt;/build&gt;    
+</code></pre>
+
+<h3 id="configuració">Configuració</h3>
+
+<p>La configuració es realitza automàticament a partir de l&rsquo;eina de suport al desenvolupament i es compon de les següents parts:</p>
+
+<ul>
+<li>Configuració de filtres web</li>
+<li>Configuració de JWT (JSON Web Token)</li>
+<li>Publicació Controladors de Seguretat</li>
+<li>Configuració d&rsquo;autenticació</li>
+<li>Configuració d&rsquo;autorització</li>
+<li>Configuració de la font de dades de l&rsquo;esquema de seguretat</li>
+</ul>
+
+<h4 id="configuració-de-filtres-web">Configuració de filtres web</h4>
+
+<p>Spring Security utilitza un conjunt de filtres per a detectar aspectes de l&rsquo;autorització i autenticació. Per a fer-los servir definirem en el fitxer &lsquo;WEB-INF/web.xml el codi següent:</p>
+
+<pre><code>&lt;filter&gt;
+    &lt;filter-name&gt;springSecurityFilterChain&lt;/filter-name&gt;
+    &lt;filter-class&gt;org.springframework.web.filter.DelegatingFilterProxy&lt;/filter-class&gt;
+&lt;/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;springSecurityFilterChain&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+</code></pre>
+
+<p>Per a més informació consultar la pàgina <a href="http://docs.spring.io/spring-security/site/docs/4.2.x/reference/htmlsingle/#security-filter-chain">Spring Security Doc</a></p>
+
+<h4 id="configuració-de-jwt-json-web-token">Configuració de JWT (JSON Web Token)</h4>
+
+<p>La nova versió de Canigó permet treballar amb <a href="https://jwt.io/">JWT</a>. Per això s&rsquo;ha fet servir la llibreria <a href="https://java.jsonwebtoken.io/">Java JWT</a>. Aquesta llibreria permet autenticar l&rsquo;usuari amb qualsevol dels mètodes descrits en el següent apartat &ldquo;Configuració d&rsquo;autenticació&rdquo;. Un cop autenticat l&rsquo;usuari, el servidor genera un token que serà enviat pel client a la capçalera HTTP a cada petició.</p>
+
+<p>Per poder configurar JWT es necessita afegir al fitxer de propietats del Servei de Seguretat (security.properties) la següent configuració:</p>
+
+<table>
+<thead>
+<tr>
+<th>Propietat</th>
+<th>Requerit</th>
+<th>Descripció</th>
+<th>Valor per Defecte</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>*.jwt.header</td>
+<td>No</td>
+<td>Nom del header del token JWT</td>
+<td>Authentication</td>
+</tr>
+
+<tr>
+<td>*.jwt.header.startToken</td>
+<td>No</td>
+<td>Inici del token JWT</td>
+<td>Bearer</td>
+</tr>
+
+<tr>
+<td>*.jwt.tokenResponseHeaderName</td>
+<td>No</td>
+<td>Nom del header del token JWT</td>
+<td>jwtToken</td>
+</tr>
+
+<tr>
+<td>*.jwt.secret</td>
+<td>No</td>
+<td>Password per generar el token JWT</td>
+<td>canigo</td>
+</tr>
+
+<tr>
+<td>*.jwt.expiration</td>
+<td>No</td>
+<td>Temps de vida del token JWT</td>
+<td>3600</td>
+</tr>
+
+<tr>
+<td>*.jwt.siteminderAuthentication</td>
+<td>No</td>
+<td>Gicar authentication</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+
+<p>Per provar l&rsquo;autenticació per token s&rsquo;ha de cridar a &ldquo;http://<app>/api/auth&rdquo; amb la capçalera GICAR, en cas d&rsquo;autenticació per GICAR, o en el cos de la petició en format JSON en altres casos.</p>
+
+<pre><code>{ 
+    username = user,
+    password  = secret
+} 
+</code></pre>
+
+<p>Aquesta crida ens retornarà un token vàlid. Per a les següents peticions s&rsquo;ha d&rsquo;enviar aquest token a la capçalera HTTP de la petició de la següent manera (configuració per defecte):</p>
+
+<p>Authentication Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE0NzkyMzEzODMsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiJ9.jeApLoXyn4nrdp2iPRkjhoTWmzFNUYOkphnck0gmp1pLygOj1hgN1O1Ps86_jY6ZXaEhXl2Fk-o36SOMQAQGHA</p>
+
+<p>Més endavant es mostra un exemple de configuració a Canigó de JWT + GICAR.</p>
+
+<h4 id="publicació-controladors-de-seguretat">Publicació Controladors de Seguretat</h4>
+
+<p>Per defecte el mòdul de seguretat publica les api /auth i /login.</p>
+
+<p>En cas de no voler publicar-les a la nostra aplicació s&rsquo;hauria de condicionar la càrrega de Spring Boot de la següent manera:</p>
+
+<p>Al fitxer de configuració de l&rsquo;aplicació (AppConfig.java) afegir l&rsquo;annotació @PropertySource al fitxer boot.properties que s&rsquo;ha de crear:</p>
+
+<pre><code>@Configuration
+@PropertySource(&quot;classpath:/config/props/boot.properties&quot;)
+@ImportResource({ &quot;classpath:cat/gencat/ctti/canigo/arch/core/config/canigo-core.xml&quot; })
+@EnableTransactionManagement
+public class AppConfig {
+}
+</code></pre>
+
+<p>Crear el fitxer /src/main/reources/config/props/boot.properties amb la propietat <em>publishAuthController</em> a false:</p>
+
+<pre><code>publishAuthController=false
+</code></pre>
+
+<h4 id="configuració-de-l-autenticació">Configuració de l&rsquo;autenticació</h4>
+
+<p>En la configuració de l&rsquo;autenticació tindrem en consideració:</p>
+
+<ul>
+<li>Seleccionar el tipus de font contra la que es realitza l&rsquo;autenticació (per arxiu de propietats, base de dades, LDAP, &hellip;)</li>
+<li>Configurar el formulari d&rsquo;autenticació web i la seqüència d&rsquo;accions per realitzar l&rsquo;autenticació.</li>
+</ul>
+
+<p>Dins d&rsquo;aquest mòdul trobem els següents proveidors de seguretat:</p>
+
+<ul>
+<li>Seguretat In-Memory</li>
+<li>Seguretat Base de dades</li>
+<li>Seguretat LDAP</li>
+<li>Seguretat GICAR</li>
+</ul>
+
+<p>Els diferents proveidors comparteixen els següents arxius de configuració:</p>
+
+<ul>
+<li>security.properties: propietats del servei de seguretat</li>
+<li>app-custom-security.xml: arxiu XML amb la configuració de seguretat.</li>
+<li>SecurityConfig.java: classe Java amb la configuració de seguretat Web.</li>
+<li>security.users.properties: llistat en format pla dels usuaris/password/rols de l&rsquo;aplicació per al proveïdor &ldquo;InMemory&rdquo;.</li>
+</ul>
+
+<p>La disposició dels arxius és la següent:</p>
+
+<ul>
+<li>Ubicació: <PROJECT_ROOT>/src/main/resources/config/props/security.users.properties</li>
+<li>Ubicació: <PROJECT_ROOT>/src/main/resources/spring/app-custom-security.xml</li>
+<li>Ubicació: <PROJECT_ROOT>/src/main/java/cat/gencat/nomapp/config/SecurityConfig.java</li>
+<li>Ubicació: <PROJECT_ROOT>/src/main/resources/config/props/security.properties</li>
+</ul>
+
+<p>A continuació es mostra la classe SecurityConfig per a una configuració basada en GICAR amb token JWT en una aplicació Canigó:</p>
+
+<pre><code>public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private AuthenticationEntryPoint restAuthenticationEntryPoint;
+
+    @Autowired
+    private PropertiesConfiguration propertiesConfiguration;
+
+    @Autowired
+    @Lazy
+    private AuthenticationManager authenticationManager;
+    
+    @Autowired
+    @Lazy
+    private AuthenticationSuccessHandler restAuthenticationSuccessHandler;
+
+    @Autowired
+    @Lazy
+    private DataSource dataSource;
+
+    @Override
+    protected void configure(final HttpSecurity http) throws Exception {
+
+        http.authorizeRequests().antMatchers(&quot;/api/auth&quot;).permitAll().antMatchers(&quot;/images/*/**&quot;, &quot;/css/*/**&quot;, &quot;/js/*/**&quot;, &quot;/fonts/*/**&quot;)
+                .permitAll().antMatchers(&quot;/api/info/properties&quot;, &quot;/api/info/modules&quot;).hasRole(&quot;ADMIN&quot;).antMatchers(&quot;/api/equipaments/**&quot;).hasRole(&quot;USER&quot;);
+
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint);
+        http.addFilterBefore(jwtAuthenticationFilter(), AbstractPreAuthenticatedProcessingFilter.class);
+
+    }
+
+    @Bean
+    @Autowired
+    public ProxyUsernamePasswordAuthenticationFilter proxyUsernamePasswordAuthenticationFilter() {
+        final ProxyUsernamePasswordAuthenticationFilter proxyUsernamePasswordAuthenticationFilter = new ProxyUsernamePasswordAuthenticationFilter(&quot;/api/login&quot;,
+                RequestMethod.POST.toString());
+        proxyUsernamePasswordAuthenticationFilter.setSiteminderAuthentication(true);
+        proxyUsernamePasswordAuthenticationFilter.setAuthenticationManager(authenticationManager);
+        proxyUsernamePasswordAuthenticationFilter.setAuthenticationSuccessHandler(restAuthenticationSuccessHandler);
+        return proxyUsernamePasswordAuthenticationFilter;
+    }
+
+    @Bean
+    public AuthenticationProvider gicarProvider() {
+        final SiteminderAuthenticationProvider siteminderAuthenticationProvider = new SiteminderAuthenticationProvider();
+        siteminderAuthenticationProvider.setUserDetailsService(gicarUserDetailsService());
+        return siteminderAuthenticationProvider;
+    }
+
+    @Bean
+    @Primary
+    public UserDetailsService gicarUserDetailsService() {
+        final GICARUserDetailsServiceImpl gicarUserDetailsService = new GICARUserDetailsServiceImpl();
+        gicarUserDetailsService.setHttpGicarHeaderUsernameKey(getHttpGicarHeaderUsernameKey());
+        gicarUserDetailsService.setAuthoritiesDAO(authoritiesDAO());
+        return gicarUserDetailsService;
+    }
+
+    @Bean
+    public AuthoritiesDAO authoritiesDAO() {
+        final AuthoritiesDAOImpl authoritiesDAOImpl = new AuthoritiesDAOImpl();
+        authoritiesDAOImpl.setDataSource(dataSource);
+        return authoritiesDAOImpl;
+    }
+
+    @Override
+    @Autowired
+    protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(gicarProvider());
+    }
+
+    @Bean
+    @Autowired
+    public AuthenticationManager authenticationManager(final AuthenticationManagerBuilder auth) {
+        return auth.getOrBuild();
+    }
+
+    @Bean
+    @Named(&quot;jwtAuthenticationService&quot;)
+    public AuthenticationService jwtAuthenticationService() {
+        final JwtAuthenticationService JwtAuthenticationService = new JwtAuthenticationService();
+        JwtAuthenticationService.setSiteminderAuthentication(getSiteminderAuthentication());
+        JwtAuthenticationService.setTokenResponseHeaderName(getTokenResponseHeaderName());
+        JwtAuthenticationService.setHeaderAuthName(getHeaderAuthName());
+
+        return JwtAuthenticationService;
+    }
+
+    @Bean
+    @Named(&quot;jwtAuthenticationFilter&quot;)
+    public JwtAuthenticationFilter jwtAuthenticationFilter() {
+        final JwtAuthenticationFilter jwtAuthenticationFilter = new JwtAuthenticationFilter();
+        jwtAuthenticationFilter.setHeaderAuthName(getHeaderAuthName());
+        jwtAuthenticationFilter.setStartToken(getStartToken());
+        jwtAuthenticationFilter.setTokenResponseHeaderName(getTokenResponseHeaderName());
+        return jwtAuthenticationFilter;
+    }
+
+    @Bean
+    @Named(&quot;jwtTokenHandler&quot;)
+    public JwtTokenHandler jwtTokenHandler() {
+        final JwtTokenHandler JwtTokenHandler = new JwtTokenHandler();
+        JwtTokenHandler.setExpiration(getExpiration());
+        JwtTokenHandler.setSecret(getSecret());
+        return JwtTokenHandler;
+    }
+
+    private String getSecret() {
+        final String secret = propertiesConfiguration.getProperty(&quot;jwt.secret&quot;);
+        return secret != null ? secret : &quot;canigo&quot;;
+    }
+
+    private Long getExpiration() {
+        final Long expiration = new Long(propertiesConfiguration.getProperty(&quot;jwt.expiration&quot;));
+        return expiration != null ? expiration : 3600L;
+    }
+
+    private String getStartToken() {
+        final String startToken = propertiesConfiguration.getProperty(&quot;jwt.header.startToken&quot;);
+        return startToken != null ? startToken : &quot;Bearer&quot;;
+    }
+
+    private String getHeaderAuthName() {
+        final String headerAythName = propertiesConfiguration.getProperty(&quot;jwt.header&quot;);
+        return headerAythName != null ? headerAythName : &quot;Authentication&quot;;
+    }
+
+    private String getTokenResponseHeaderName() {
+        final String tokenResponseHeaderName = propertiesConfiguration.getProperty(&quot;jwt.tokenResponseHeaderName&quot;);
+        return tokenResponseHeaderName != null ? tokenResponseHeaderName : &quot;jwtToken&quot;;
+    }
+
+    private boolean getSiteminderAuthentication() {
+        final Boolean siteminder = new Boolean(propertiesConfiguration.getProperty(&quot;jwt.siteminderAuthentication&quot;));
+        return siteminder != null ? siteminder : false;
+    }
+
+    private String getHttpGicarHeaderUsernameKey() {
+        final String gicarHeader = propertiesConfiguration.getProperty(&quot;security.gicar.httpGicarHeaderUsernameKey&quot;);
+        return gicarHeader != null ? gicarHeader : &quot;NIF&quot;;
+    }
+}
+</code></pre>
+
+<h4 id="configuració-de-la-font-d-autorització-per-base-de-dades">Configuració de la font d&rsquo;autorització per base de dades</h4>
+
+<p>Per a configurar la font d&rsquo;autorització mitjançant base de dades és necessari:</p>
+
+<ul>
+<li>Configurar l&rsquo;arxiu de propietats security.properties.</li>
+<li>Conigurar el proveïdor de seguretat dins de la configuració de seguretat de Spring.</li>
+</ul>
+
+<p>Els dos arxius es generen i configuren de manera automàtica mitjançant l&rsquo;eina de desenvolupament.</p>
+
+<p>Les propietats de l&rsquo;arxiu security.properties son les següents:</p>
+
+<table>
+<thead>
+<tr>
+<th>Propietat</th>
+<th>Requerit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>*.security.database.jndiName</td>
+<td>Si</td>
+<td>Nom JNDI d&rsquo;accés a la BD. Obligatori per a connexions JNDI</td>
+</tr>
+
+<tr>
+<td>*.security.database.url</td>
+<td>Si</td>
+<td>URL de connexió a la base de dades</td>
+</tr>
+
+<tr>
+<td>*.security.database.username</td>
+<td>Si</td>
+<td>Usuari de connexió a la base de dades</td>
+</tr>
+
+<tr>
+<td>*.security.database.password</td>
+<td>Si</td>
+<td>Password de connexió a la base de dades</td>
+</tr>
+</tbody>
+</table>
+
+<p>La configuració del provider en app-custom-security.xml per aquest proveidor és la següent:</p>
+
+<ul>
+<li>Afegim el provider al authentication manager.</li>
+<li>Afegim el tipus de codificador de password per tal de comparar el password de base de dades i el que ens ha proporcionat l&rsquo;usuari de l&rsquo;aplicació. Aquest codificador suporta: plaintext, sha, sha-256, md5, md4, ssha. Si en la base de dades tenim emmagatzemat els password d&rsquo;usuari en md5, i marquem &ldquo;password-encode&rdquo; com a md5, de manera automàtica, el password proporcionat per l&rsquo;usuari via formulari de login (j_password) es codificarà en md5 per posteriorment ser comparat amb el emmagatzemat a la base de dades.</li>
+</ul>
+
+<pre><code>&lt;security:authentication-manager&gt;
+    &lt;security:authentication-provider&gt;
+                &lt;security:password-encoder hash=&quot;plaintext&quot;/&gt;
+        &lt;security:jdbc-user-service data-source-ref=&quot;dataSource&quot;/&gt;
+    &lt;/security:authentication-provider&gt;
+&lt;/security:authentication-manager&gt;
+</code></pre>
+
+<div class="message warning">
+Accés base de dades
+
+L'eina de suport al desenvolupament automatitza la instal- lació del mòdul de persistència si aquest no ha estat instal- lat prèviament pel desenvolupador.
+</div>
+
+<h4 id="configuració-de-l-autorització-per-ldap">Configuració de l&rsquo;Autorització per LDAP</h4>
+
+<p>Per a configurar l&rsquo;acces a LDAP és necessari:</p>
+
+<ul>
+<li>Configurar l&rsquo;arxiu de propietats security.properties.</li>
+<li>Conigurar el proveidor de seguretat dins de la configuració de seguretat de Spring.</li>
+</ul>
+
+<p>Els dos arxius es generen i configuren de manera automàtica mitjançant l&rsquo;eina de desenvolupament.</p>
+
+<p>Les propietats de l&rsquo;arxiu security.properties son les següents:</p>
+
+<table>
+<thead>
+<tr>
+<th>Propietat</th>
+<th>Requerit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>*.security.ldap.url</td>
+<td>Si</td>
+<td>Direcció del servidor ldap separat amb dos punts &ldquo;:&rdquo; del port</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.manager.dn</td>
+<td>Sí</td>
+<td>Identificador de l&rsquo;usuari administrador del LDAP</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.manager.password</td>
+<td>Si</td>
+<td>Password del l&rsquo;usuari administrador del LDAP</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.user.search.filter</td>
+<td>No</td>
+<td>Filtre de cerca dels usuaris dintre de l&rsquo;estructura del LDAP. Per defecte: (uid={0})</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.user.search.base</td>
+<td>Si</td>
+<td>String base de la ubicació dels usuaris dintre de l&rsquo;estructura del LDAP</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.group.search.base</td>
+<td>Si</td>
+<td>String base de la ubicació dels grups dintre de l&rsquo;estructura del LDAP</td>
+</tr>
+
+<tr>
+<td>*.security.ldap.group.search.filter</td>
+<td>No</td>
+<td>Filtre de cerca dels grups dintre de l&rsquo;estructura del LDAP. Per defecte: (cn={0})</td>
+</tr>
+</tbody>
+</table>
+
+<p>Per a realitzar les proves en desenvolupament podem instal- lar un servidor LDAP senzill (veure l&rsquo;apartat &lsquo;Eines de Suport&rsquo; per a més referència).</p>
+
+<p>Configuració del provider en <strong>app-custom-security.xml</strong>:</p>
+
+<ul>
+<li>Afegim el provider al authentication manager.</li>
+<li>Afegim la connexió al LDAP server</li>
+</ul>
+
+<pre><code>&lt;security:authentication-manager&gt;
+    &lt;security:ldap-authentication-provider
+        server-ref=&quot;ldapLocal&quot;
+        user-search-filter=&quot;${security.ldap.user.search.filter:(uid={0})}&quot;
+        user-search-base=&quot;${security.ldap.user.search.base}&quot;
+        group-search-base=&quot;${security.ldap.group.search.base}&quot;
+        group-search-filter=&quot;${security.ldap.group.search.filter:(cn={0})}&quot;&gt;
+
+        &lt;security:password-compare/&gt;
+    &lt;/security:ldap-authentication-provider&gt;
+&lt;/security:authentication-manager&gt;
+
+&lt;security:ldap-server url=&quot;${security.ldap.url}&quot; id=&quot;ldapLocal&quot; manager-dn=&quot;${security.ldap.manager.dn}&quot;
+manager-password=&quot;${security.ldap.manager.password}&quot;/&gt;
+</code></pre>
+
+<h4 id="configuració-de-l-autorització-per-arxiu-de-propietats">Configuració de l&rsquo;Autorització per arxiu de propietats</h4>
+
+<p>Aquest proveidor de seguretat es recolça en un arxiu de propietats per carregar en memòria els usuaris/password/rols de l&rsquo;aplicació.</p>
+
+<p>Per a configurar l&rsquo;acces mitjançant un arxiu de propietats és necessari:</p>
+
+<ul>
+<li>Configurar l&rsquo;arxiu de propietats <strong>security.users.properties</strong>.</li>
+<li>Conigurar el proveidor de seguretat dins de la configuració de seguretat de Spring (<strong>app-custom-security.xml</strong>).</li>
+</ul>
+
+<p>L&rsquo;arxiu que conté aquesta configuració <strong>security.users.properties</strong> te el següent format:</p>
+
+<pre><code>username=password,grantedAuthority[,grantedAuthority][,enabled|disabled]
+</code></pre>
+
+<p>Exemple de configuració:</p>
+
+<pre><code>user=password,ROLE_USER,enabled
+admin=password,ROLE_USER,ROLE_ADMIN,enabled
+</code></pre>
+
+<h4 id="configuració-del-provider-en-app-custom-security-xml">Configuració del provider en <strong>app-custom-security.xml</strong>:</h4>
+
+<ul>
+<li>Afegim el provider al authentication manager.</li>
+<li>Afegim el tipus de codificador de password per tal de comparar el password de l&rsquo;arxiu de propietats i el que ens ha proporcionat l&rsquo;usuari de l&rsquo;aplicació. Aquest codificador suporta: plaintext, sha, sha-256, md5, md4, ssha.</li>
+</ul>
+
+<pre><code>&lt;security:authentication-manager&gt;
+    &lt;security:authentication-provider&gt;
+        &lt;security:password-encoder hash=&quot;plaintext&quot;/&gt;
+        &lt;security:user-service properties=&quot;classpath:/config/props/security.users.properties&quot;/&gt;
+    &lt;/security:authentication-provider&gt;
+&lt;/security:authentication-manager&gt;
+</code></pre>
+
+<h4 id="configuració-de-la-font-d-autorització-per-gicar">Configuració de la Font d&rsquo;Autorització per GICAR</h4>
+
+<p>Per a configurar l&rsquo;accés a GICAR és necessari:</p>
+
+<ul>
+<li>Configurar l&rsquo;arxiu de propietats <strong>security.properties</strong>.</li>
+<li>Configurar el proveidor de seguretat dins de la configuració de seguretat de Spring.</li>
+</ul>
+
+<p>Els dos arxius es generen i configuren de manera automàtica mitjançant l&rsquo;eina de desenvolupament:</p>
+
+<p>Les propietats de l&rsquo;arxiu <strong>security.properties</strong> son les següents:</p>
+
+<p>Per a configurar l&rsquo;acces a GICAR és necessari configurar l&rsquo;arxiu de propietats <strong>security.properties</strong>. Aquest arxiu es genera automàticament des de l&rsquo;eina de suport, i té el següent format:</p>
+
+<table>
+<thead>
+<tr>
+<th>Propietat</th>
+<th>Requerit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>*.security.gicar.httpGicarHeaderUsernameKey</td>
+<td>No</td>
+<td>Aquesta propietat indica quin és el camp de la capçalera HTTP_GICAR que conté el nom de l&rsquo;usuari autenticat a GICAR. Per defecte: NIF</td>
+</tr>
+</tbody>
+</table>
+
+<div class="message warning">
+El servei de seguretat de Canigó no dona suport a la capçalera "HTTP_GICAR_AUTH_CERT". En cas de requerir l'autenticació amb certificat cal sol·licitar a l'equip de GICAR la recepció d'aquesta capçalera per aplicació/entorn, i fer-ne la gestió pertinent a l'aplicació.
+</div>
+
+<p>A continuació es mostra la classe SecurityConfig per a una configuració basada en GICAR sense utilitzar JWT com a sistema d&rsquo;autenticació.</p>
+
+<pre><code>public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private AuthenticationEntryPoint restAuthenticationEntryPoint;
+
+    @Autowired
+    private PropertiesConfiguration propertiesConfiguration;
+
+    @Autowired
+    @Lazy
+    private AuthenticationManager authenticationManager;
+    
+    @Autowired
+    @Lazy
+    private AuthenticationSuccessHandler restAuthenticationSuccessHandler;
+
+    @Autowired
+    @Lazy
+    private DataSource dataSource;
+
+    @Override
+    protected void configure(final HttpSecurity http) throws Exception {
+
+        http.authorizeRequests().antMatchers(&quot;/api/auth&quot;).permitAll().antMatchers(&quot;/images/*/**&quot;, &quot;/css/*/**&quot;, &quot;/js/*/**&quot;, &quot;/fonts/*/**&quot;).permitAll()
+                .antMatchers(&quot;/api/info/properties&quot;, &quot;/api/info/modules&quot;).hasRole(&quot;ADMIN&quot;).antMatchers(&quot;/api/equipaments/**&quot;).hasRole(&quot;USER&quot;);
+        http.exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint);
+        http.addFilterBefore(proxyUsernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+        
+    }
+    
+    @Override
+    @Autowired
+    protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(gicarProvider());
+    }
+
+    @Bean
+    @Autowired
+    public ProxyUsernamePasswordAuthenticationFilter proxyUsernamePasswordAuthenticationFilter() {
+        final ProxyUsernamePasswordAuthenticationFilter proxyUsernamePasswordAuthenticationFilter = new ProxyUsernamePasswordAuthenticationFilter(&quot;/api/login&quot;,
+                RequestMethod.POST.toString());
+        proxyUsernamePasswordAuthenticationFilter.setSiteminderAuthentication(true);
+        proxyUsernamePasswordAuthenticationFilter.setAuthenticationManager(authenticationManager);
+        proxyUsernamePasswordAuthenticationFilter.setAuthenticationSuccessHandler(restAuthenticationSuccessHandler);
+        return proxyUsernamePasswordAuthenticationFilter;
+    }
+
+    @Bean
+    public AuthenticationProvider gicarProvider() {
+        final SiteminderAuthenticationProvider siteminderAuthenticationProvider = new SiteminderAuthenticationProvider();
+        siteminderAuthenticationProvider.setUserDetailsService(gicarUserDetailsService());
+        return siteminderAuthenticationProvider;
+    }
+
+    @Bean
+    @Primary
+    public UserDetailsService gicarUserDetailsService() {
+        final GICARUserDetailsServiceImpl gicarUserDetailsService = new GICARUserDetailsServiceImpl();
+        gicarUserDetailsService.setHttpGicarHeaderUsernameKey(getHttpGicarHeaderUsernameKey());
+        gicarUserDetailsService.setAuthoritiesDAO(authoritiesDAO());
+        return gicarUserDetailsService;
+    }
+
+    @Bean
+    public AuthoritiesDAO authoritiesDAO() {
+        final AuthoritiesDAOImpl authoritiesDAOImpl = new AuthoritiesDAOImpl();
+        authoritiesDAOImpl.setDataSource(dataSource);
+        return authoritiesDAOImpl;
+    }
+
+    
+
+    @Bean
+    @Autowired
+    public AuthenticationManager authenticationManager(final AuthenticationManagerBuilder auth) {
+        return auth.getOrBuild();
+    }
+
+    private String getHttpGicarHeaderUsernameKey() {
+        final String gicarHeader = propertiesConfiguration.getProperty(&quot;security.gicar.httpGicarHeaderUsernameKey&quot;);
+        return gicarHeader != null ? gicarHeader : &quot;NIF&quot;;
+    }
+}
+
+</code></pre>
+
+<p>Amb aquesta configuració ha de ser possible autoritzar un usuari que prèviament ha estat auntenticat en el servei de GICAR. Per aquest motiu és necessari rebre certes dades referents a aquesta autenticació ja realitzada. A la capçalera HTML podrem accedir a aquestes dades:</p>
+
+<pre><code>HTTP_GICAR=CODIINTERN=NRDRJN0001;NIF=11112222W;EMAIL=mail.admin@gencat.net;UNITAT_MAJOR=CTTI;
+UNITAT_MENOR=CTTI Qualitat
+</code></pre>
+
+<p>On CODIINTERN és el codi intern, el NIF el NIF, EMAIL l&rsquo;adreça de correu electrònic registrada al Director Corporatiu, UNITAT_MAJOR és l&rsquo;organització i UNITAT_MENOR és la unitat.</p>
+
+<div class="message warning">
+En cas de que l'aplicació utilitzi la separació entre codi estàtic i dinàmic és necessari indicar la següent propietat dintre del bean proxyUsernamePasswordAuthenticationFilter:
+<br><br>
+
+<b>&lt;property name="filterProcessesUrl" value="/AppJava/j_spring_security_check" /&gt;</b>
+
+</div>
+
+<p><strong>Logout</strong></p>
+
+<p>Per tots els mètodes d&rsquo;autenticació, el procediment de logoff consisteix en invalidar la sessió, forçant així que el servei de seguretat intervingui en la següent petició solicitant la nova identificació de l&rsquo;usuari.</p>
+
+<p>En el cas de GICAR, però, aquesta autenticació és realitzada per un sistema extern a l&rsquo;aplicació i, per tant, s&rsquo;ha de comunicar a aquest sistema extern la intenció de fer el logoff. El mecanisme previst per fer-ho consisteix en una URL de Gicar que, al ser invocada, realitza el logoff.</p>
+
+<p>Aquest enllaç de logout és depenent de l&rsquo;agent de SiteMinder que l&rsquo;aplicació fa servir per a comunicar-se amb el Policy Server.</p>
+
+<p>Així doncs, els enllaços de logout són els següents:</p>
+
+<ul>
+<li>Per a una aplicació ubicada en els apaches corporatius de internet: <a href="http://sso.gencat.cat/siteminderagent/forms/logoff.html">http://sso.gencat.cat/siteminderagent/forms/logoff.html</a></li>
+<li>Per a una aplicació ubicada en els apaches corporatius de intranet: <a href="http://sso.gencat.intranet/siteminderagent/forms/logoff.html">http://sso.gencat.intranet/siteminderagent/forms/logoff.html</a></li>
+<li>Per a una aplicació amb apache &ldquo;pròpi&rdquo;: http://*<strong><em>.gencat.</em></strong>/siteminderagent/forms/logoff.html;</li>
+</ul>
+
+<h2 id="eines-de-suport">Eines de Suport</h2>
+
+<h3 id="servidor-ldap-de-proves-openldap">Servidor LDAP de proves: openLDAP</h3>
+
+<p>Els diferents passos per a instal- lar openLDAP i importar un directori LDAP d&rsquo;exemple són:</p>
+
+<ul>
+<li>Baixar openLDAP per a Windows <a href="http://sourceforge.net/projects/openldapwindows/">http://sourceforge.net/projects/openldapwindows/</a> i instal- lar-ho.</li>
+<li>Canviar la configuració per defecte de openldap. Copiar les dades següents en un fitxer slapd.conf. Copiarem el slapd.conf en la mateixa carpeta que openLDAP.</li>
+</ul>
+
+<pre><code>#######################################################################
+# See slapd.conf(5) for details on configuration options.
+# This file should NOT be world readable.
+#######################################################################
+ucdata-path ./ucdata
+include ./etc/schema/core.schema
+include ./etc/schema/cosine.schema
+include ./etc/schema/inetorgperson.schema
+
+# Define global ACLs to disable default read access.
+
+# Do not enable referrals until AFTER you have a working directory
+# service AND an understanding of referrals.
+#referral ldap://root.openldap.org
+
+pidfile ./var/run/slapd.pid
+argsfile ./var/run/slapd.args
+
+#######################################################################
+# BDB database definitions
+#######################################################################
+
+###database bdb
+###suffix &quot;dc=my-domain,dc=com&quot;
+###rootdn &quot;cn=Manager,dc=my-domain,dc=com&quot;
+
+database bdb
+suffix dc=&quot;mycompany&quot;,dc=&quot;com&quot;
+rootdn &quot;cn=Manager,dc=mycompany,dc=com&quot;
+
+rootpw secret
+Eines de Suport
+
+directory ./var/openldap-data
+index objectClass eq
+</code></pre>
+
+<ul>
+<li>Obrir una pantalla &ldquo;DOS command&rdquo;, anar a la carpeta on hem instal- lat el programa i arrancar openLDAP amb la comanda</li>
+</ul>
+
+<pre><code>.\slapd -d 1
+</code></pre>
+
+<p>Si tot ha funcionat bé, hauríem de veure una sortida com la següent:</p>
+
+<p><img src="/related/canigo/documentacio/modul-seguretat/ServeiSeguretat_img012.jpg.gif" alt="Execució Open LDAP" /></p>
+
+<ul>
+<li>Copiar les dades següents en un fitxer setup.ldif. Aquest fitxer conté un directori LDAP de l&rsquo;empresa &ldquo;mycompany.com&rdquo; amb 2 persones: &ldquo;gestoruser&rdquo; i &ldquo;usuari&rdquo;. Copiarem el setup.ldif en la mateixa carpeta que openLDAP.</li>
+</ul>
+
+<pre><code>### Top level definition
+#dn: dc=mycompany,dc=com
+#objectClass: top
+#objectClass: dcObject
+#objectClass: domain
+#dc: mycompany
+
+### organizationalUnit : PEOPLE
+# Definition of people
+dn: ou=people,dc=mycompany,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+
+# Gestor User
+dn: uid=gestoruser,ou=people,dc=mycompany,dc=com
+objectClass: person
+objectClass: inetOrgPerson
+cn: State App
+displayName: App Admin
+givenName: App
+mail: gestor@fake.org
+title: ROLE_ADMIN
+sn: Gestor
+uid: gestoruser
+userPassword: gestorpassword
+
+# usuario normal
+dn: uid=usuario,ou=people,dc=mycompany,dc=com
+objectClass: person
+objectClass: inetOrgPerson
+cn: State App
+displayName: App Admin
+givenName: App
+mail: usuario@fake.org
+title: ROLE_USER
+sn: Usuario
+uid: usuario
+userPassword: usuariopassword
+</code></pre>
+
+<p>Obrir una altra pantalla &ldquo;DOS command&rdquo;, anar a la carpeta on hem instal- lat el programa i importar les dades amb la comanda:</p>
+
+<pre><code>ldapadd -x -D &quot;cn=Manager,dc=mycompany,dc=com&quot; -W -f setup.ldif
+</code></pre>
+
+<p>La contrasenya per defecte és &ldquo;secret&rdquo;.</p>
+
+<h3 id="jxplorer">Jxplorer</h3>
+
+<p>Comprovarem que la importació de dades ha funcionat amb Jxplorer, un client LDAP Java i opensource.</p>
+
+<ul>
+<li>Baixar Jxplorer a la url <a href="http://sourceforge.net/projects/jxplorer/">http://sourceforge.net/projects/jxplorer/</a> i instal- lar-ho</li>
+<li>Prémer el botó per a connectar-se al nostre directori LDAP.</li>
+</ul>
+
+<p>La contrasenya per defecte és &ldquo;secret&rdquo;. La pantalla següent mostra els valors de la diferents paràmetres:</p>
+
+<p><img src="/related/canigo/documentacio/modul-seguretat/ServeiSeguretat_img013.jpg.gif" alt="Configuració paràmetres JXplorer" /></p>
+
+<p>Si tot ha funcionat bé, hauríem de veure la pantalla següent:</p>
+
+<p><img src="/related/canigo/documentacio/modul-seguretat/ServeiSeguretat_img014.jpg.gif" alt="Resultat JXplorer" /></p>
+
+
+					
+
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="http://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="http://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+</body>
+</html>

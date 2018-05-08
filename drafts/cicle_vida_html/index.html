@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Cicle de vida Formularis HTML5 a eFormularis</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Cicle de vida Formularis HTML5 a eFormularis\" />");
+		document.write("<meta name=\"description\" content=\"Cicle de vida Formularis HTML5 a eFormularis\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="http://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Arquitectura CTTI</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/principis' data-toggle='_dropdown'>Principis d&#39;arquitectura</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/drafts">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+									
+									<li>
+										Cicle de vida Formularis HTML5 a eFormularis
+									</li>
+									
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+										Cicle de vida Formularis HTML5 a eFormularis
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 02-05-2018
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+
+					
+
+						
+
+<p>En l&rsquo;actualització tecnològica realitzada durant el 2018 (<sup>23</sup>&frasl;<sub>4</sub> Preproducció - <sup>11</sup>&frasl;<sub>6</sub> Producció) a la plataforma d&rsquo;eFormularis, l&rsquo;Adobe LiveCycle es substituït per l&rsquo;AEM (Adobe Experience Manager), el qual incorpora noves funcionalitats relatives a Formuaris HTML5.</p>
+
+<h2 id="formularis-htm5-responsius">Formularis HTM5 responsius</h2>
+
+<p>Els <strong>Adaptive Forms</strong> són els formularis HTML5 d&rsquo;AEM amb capacitat multi-dispositiu. Això vol dir que responen de forma diferent, s&rsquo;adapten, depenent del dispositiu on siguin executats. Un altre gran diferència respecte als formularis PDF, és que el mode d&rsquo;execució és <strong>on-line</strong>. El formulari ja no es descarrega i s&rsquo;emplena en mode <strong>off-line</strong> com en el cas dels PDF, per a ser enviats posteriorment.</p>
+
+<p>D&rsquo;aquí en endavant, quan s&rsquo;anomeni un formulari HTML5 ens estem referint exclusivament a un adaptive form d&rsquo;AEM.</p>
+
+<h2 id="cicle-de-vida">Cicle de vida</h2>
+
+<p>A continuació es descriu el cicle de vida pel que passa un formulari HTML5 a la plataforma d&rsquo;eFormularis</p>
+
+<h4 id="desenvolupament">Desenvolupament</h4>
+
+<p>Desenvolupament local en una instància AEM del desenvolupador, executada en mode autor. El instal·lable d&rsquo;AEM per aquesta instància d&rsquo;AEM, ha de ser sol·licitada pel responsable CTTI de l&rsquo;aplicació, preferiblement obrint una petició al servei [STF|], o bé enviant un correu a la [bústia del CS Canigó|mailto:oficina-tecnica.canigo.ctti@gencat.cat].</p>
+
+<p>L&rsquo;execució de la instància d&rsquo;AEM en mode autor permetrà al desenvolupador fer el disseny del formulari HTML5.</p>
+
+<pre><code>$ java -jar &lt;AEM_jar&gt;
+</code></pre>
+
+<p>S&rsquo;ha de tenir en compte que per defecte el repositori d&rsquo;AEM és crea al directori des d&rsquo;on l&rsquo;usuari executa aquest procés. És important ja que el volum de dades que s&rsquo;hi emmagatzemen és gran (5GB aproximadament) i de vital importancia per el funcionament d&rsquo;AEM.</p>
+
+<h4 id="desplegament">Desplegament</h4>
+
+<p>Per tal que un formulari HTML5 sigui desplegat a eFormularis, cal seguir les següents pases:</p>
+
+<pre><code>* Exportar el formulari HTML5 a l'AEM autor de desenvolupament: AEM Start -&gt; Forms -&gt; Forms &amp; Documents -&gt; Sel·leccionar formulari -&gt; Download
+* Crear una petició al CSTD, [servei STF] (https://cstd.ctti.gencat.cat/jiracstd/browse/STF) especificant aquesta informacio:
+** àmbit, aplicació, nom formulari
+** adjunt zip amb el conjunt d'assets resultat de l'exportació del formulari
+** entorn
+* El CS Canigó validarà el formulari i el publicarà, retornant com a resultat la URL d'accés al formulari: 
+** PRE: https://preproduccio.publicador.eformularis.intranet.gencat/content/forms/af/ambit/aplicacio/formulari.html
+** PRO: https://publicador.eformularis.intranet.gencat/content/forms/af/ambit/aplicacio/formulari.html
+
+L'usuari pot fer referència a aquesta URL o incoportar el formulari a la seva aplicació.
+</code></pre>
+
+<h4 id="integració">Integració</h4>
+
+<p>Per la integració d&rsquo;un formulari HTML5 a un lloc web s&rsquo;han de seguir les següents pases:</p>
+
+<ul>
+<li><p>Incorporar el següent codi a la plana HTML5 desitjada:</p>
+
+<p><body></p>
+
+<div></div>
+
+<p><script>
+            var path = &ldquo;<a href="https://preproduccio.publicador.eformularis.intranet.gencat/content/forms/af/ambit/aplicacio/formulari.html&quot;">https://preproduccio.publicador.eformularis.intranet.gencat/content/forms/af/ambit/aplicacio/formulari.html&quot;</a>;
+            var pathXML = &ldquo;URL que contingui les dades XML per a relitzar la precàrrega (si s&rsquo;escau)
+            path += &ldquo;/jcr:content/guideContainer.html&rdquo;;
+            $.ajax({
+                url  : path ,
+                type : &ldquo;GET&rdquo;,
+                data : {
+                    // Set the wcmmode to be disabled
+                    wcmmode : &ldquo;disabled&rdquo;,
+                    &ldquo;dataRef&rdquo;: pathXML
+                },
+                async: false,
+                success: function (data) {
+                    //document.getElementById(&lsquo;output&rsquo;).innerHTML = data;
+                    $( &ldquo;div&rdquo; ).html(data);
+                },
+                error: function (data) {
+                    // any error handler
+                }
+            });</p>
+
+<p></script></p>
+
+<p></body></p></li>
+</ul>
+
+<h2 id="prerequisits">Prerequisits</h2>
+
+<p>El lloc web on es vol incorporar el formulari ha de tenir uns frontals (Apache, NGinx,&hellip;) com a part de la seva infraestructura. És en aquests frontals on cal fer la següent configuració per l&rsquo;accés als recursos (js, css, &hellip;) d&rsquo;AEM:</p>
+
+<pre><code>ProxyPass /content https://preproduccio.publicador.eformularis.intranet.gencat/content
+ProxyPass /etc https://preproduccio.publicador.eformularis.intranet.gencat/etc
+ProxyPass /etc.clientlibs https://preproduccio.publicador.eformularis.intranet.gencat/etc.clientlibs
+# CSRF Filter
+ProxyPass /libs/granite/csrf/token.json https://preproduccio.publicador.eformularis.intranet.gencat/libs/granite/csrf/token.json
+
+ProxyPassReverse /etc https://preproduccio.publicador.eformularis.intranet.gencat/etc
+ProxyPassReverse /etc.clientlibs https://preproduccio.publicador.eformularis.intranet.gencat/etc.clientlibs
+# written for thank you page and other URL present in AF during redirect
+ProxyPassReverse /content https://preproduccio.publicador.eformularis.intranet.gencat/content
+</code></pre>
+
+
+					
+
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="http://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="http://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+</body>
+</html>
